@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in log in form using php and mysql</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="./phpfiles/login.php" method="post" id="login" class="">
+    <fieldset>
+        <legend>Login Form</legend>
+        <label for="username">Username</label>
+        <input type="text" placeholder="Type your username" id="username" name="username" required>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Type your password" required>
+        <input type="submit" value="Login">
+        <input type="button" value="Don't have Account, Try Sign In!" onclick="showform()">
+      
+    </fieldset>
+    </form>
+
+
+
+    <form action="./phpfiles/signin.php" method="post" id="signin" class="hidden">
+        <fieldset>
+            <legend>Sign in Form</legend>
+            <label for="fname">First name</label>
+            <input type="text" placeholder="Type your Firstname" id="fname" name="fname" required>
+            <label for="lname">Last name</label>
+            <input type="text" placeholder="Type your Lastname" id="lname" name="lname" required>
+            <label for="username">Username</label>
+            <input type="text" placeholder="Type your username" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Type your password" required>
+            <label for="rpassword">Confirm your password</label>
+            <input type="password" name="rpassword" id="rpassword" placeholder="Re-Type your password" required>
+            <input type="submit" value="Signin">
+            <input type="button" value="Already have Account, Try Log In!" onclick="showform()">
+          
+        </fieldset>
+        </form>
+    </div>
+    <script src="./javascripts/main.js"></script>
+</body>
+</html>
