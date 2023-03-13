@@ -26,10 +26,10 @@ td,th{
     </style>
 
         <?php
-    $host = " sql112.epizy.com ";
-    $user = "epiz_33679567";
-    $password = "8UYXdwS9jqHkgfR";
-    $dbname = "epiz_33679567_userdata";
+    $host = "localhost";
+    $user = "root";
+    $password = "";
+    $dbname = "userdata";
 // create a connection to the database
 $conn = mysqli_connect("$host", "$user", "$password", "$dbname");
 

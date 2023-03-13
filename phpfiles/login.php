@@ -3,10 +3,10 @@
 $username=$_POST['username'];
 $password=$_POST['password'];
     // Connect to MySQL
-    $host = " sql112.epizy.com ";
-    $user = "epiz_33679567";
-    $password = "8UYXdwS9jqHkgfR";
-    $dbname = "epiz_33679567_userdata";
+    $host = "localhost";
+    $user = "root";
+    $password = "";
+    $dbname = "userdata";
 $conn = mysqli_connect($host, $user, $password, $dbname);
 
 // Check connection
